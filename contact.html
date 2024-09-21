@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wanderlust Adventures</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .contact-form, .contact-info {
+            width: 45%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, textarea {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <div class="container">
+            <div class="contact-form">
+                <p>If you have any questions, feedback, or inquiries, feel free to reach out to us using the form below!</p>
+                <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> <a href="mailto:info@wanderlustadventures.com">info@wanderlustadventures.com</a></p>
+                <p><strong>Address:</strong> 123 Adventure Lane, Travel City, TC 45678</p>
+                <p><strong>Location:</strong> <a href="https://www.google.com/maps?q=Travel+City,TC+45678" target="_blank">View on Google Maps</a></p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
